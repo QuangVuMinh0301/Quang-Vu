@@ -1,0 +1,101 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 27, 2024, 12:43:02 AM
+    Author     : ADMIN
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+    transition: transform 0.3s;
+}
+
+.nav-item a:hover{
+    transform: scale(1.8);
+}
+
+.main {
+    text-align: center;
+    background-image: url('/mnt/data/image.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    height: calc(100vh - 60px); /* Điều chỉnh chiều cao trừ đi chiều cao của header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('/Assignment_HE181542_VuMinhQuang_SE1856/img/Screenshot\ 2024-06-22\ 020326.png'); /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+button {
+    position: absolute;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 0px 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 750px;
+    margin-top: 150px;
+
+}
+
+#enrollButton:hover{
+    background-color: #c82626;
+}
+
+.endimg{
+    background-image: url('/Assignment_HE181542_VuMinhQuang_SE1856/img/Screenshot\ 2024-06-23\ 213430.png'); /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+

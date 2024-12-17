@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+    transition: transform 0.3s;
+}
+
+.nav-item a:hover{
+    transform: scale(1.8);
+}
+
+.nav-item a.active {
+    color: #ff0000;
+}
+
+.main {
+    text-align: center;
+    background-image: url('/mnt/data/image.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.body-content h1 {
+    margin-bottom: 20px;
+}
+
+.first3class, .remain-class {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.remain-class{
+    padding-top: 50px;
+}
+
+.class-pics {
+    position: relative;
+    display: inline-block;
+}
+
+.class-pics img {
+    display: block;
+    width: 300px;
+    height: 500px;
+    transition: filter 0.3s ease;
+}
+
+.class-pics .description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.class-pics .button-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.class-pics:hover img {
+    filter: blur(5px);
+}
+
+.class-pics:hover .description, .class-pics:hover .button-container {
+    opacity: 1;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+button:hover {
+    background-color: #c82626;
+}
+
+footer {
+    width: 100%;
+            background-color: #ddd;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+}
+
+.footer-center {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right {
+    width: 400px;
+    height: 100%;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
